@@ -1,0 +1,101 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+main{
+    margin: 5%;
+}
+
+h1, .encriptar, .desencriptar,.borrart{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear:left;
+    margin: 5px;
+    font-weight: bold;
+}
+#botonDesencriptar, #botonEncriptar ,#borrarTexto {
+    width: 10%;
+    margin: 10px 0;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: orange;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+#botonDesencriptar:hover {
+    background: darkorange;
+    transform: scale(1);
+}
+
+#botonEncriptar:hover { 
+    background: darkorange;
+    transform: scale(1);
+}
+#borrarTexto:hover{ 
+    background: darkorange;
+    transform: scale(1);
+}
+
+#textoEncriptar, #textoModificado{
+    padding: 15px 0;
+    width: 15%;
+}
+
+input{
+    text-align: center;
+}
+
+
+footer{
+    text-align: center;
+    background: url(bg.jpg);
+    padding:45px;
+    
+}
+
+.copyright{
+    color:#FFFFFF;
+    font-size: 13px;
+    margin:20px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+ 
+    #botonDesencriptar, #botonEncriptar, #borrarTexto {
+        width: 16%;
+         }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    main {
+        margin: 5%;
+    }
+
+    #botonDesencriptar, #botonEncriptar, #borrarTexto {
+        width: 50%;
+        max-width: 200px; /* Limita el ancho máximo para que no se expanda demasiado */
+        font-size: 14px; /* Reducir el tamaño de fuente para pantallas más pequeñas */
+        padding: 10px 0; /* Reducir el relleno para adaptarse mejor */
+        margin: 10px auto; /* Centrar los botones */
+    }
+
+    #textoEncriptar, #textoModificado {
+        width: 80%;
+        max-width: 150px; /* Limita el ancho máximo para que no se expanda demasiado */
+        padding: 10px 0; /* Reducir el relleno para adaptarse mejor */
+        margin: 10px auto; /* Centrar los campos de texto */
+    }
+}
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ENCRIPTADOR</title>
+   <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/imagenes/alura -logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+ 
+
+</head>
+<body>
+    <header>
+        <img src="alura -logo.png">
+        <div><h1>ENCRIPTADOR ALURA</h1></div>
+    </header>
+    <main>
+        <form onsubmit="return false;">
+            <div class="encriptar">
+            <input type="text" id="textoEncriptar" placeholder="Ingrese texto aquí">
+
+            <input type="submit" id="botonEncriptar" value="Encriptar" onclick="encriptarTexto()">
+        </div>
+
+        <div class="desencriptar">
+
+            <input type="text" id="textoModificado" disabled placeholder="Ningún mensaje fue encriptado">
+
+            <input type="submit" id="botonDesencriptar" value="Desencriptar" onclick="desencriptarTexto()">
+        </div>
+
+        <div class="borrart">
+
+            <input type="submit" id="borrarTexto" value="BORRAR" onclick="BorrarTexto()">
+        </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <img src="logo-blanco.png">
+        <p class="copyright">&copy Copyright Encriptador 2024</p>
+    </footer>
+    <script src="encriptador.js"></script>
+
+</body>
+</html>
